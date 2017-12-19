@@ -1,0 +1,16 @@
+{
+  "name": "react-polymer-todo",
+  "private": true,
+  "dependencies": {
+    "polymer": "^2.0.0",
+    "px-dropdown": "^4.2.1",
+    "px-theme": "^3.1.4",
+    "px-branding-bar": "^1.1.0",
+    "px-app-nav": "^2.1.1",
+    "px-app-helpers": "^2.0.1",
+    "px-inbox": "polymer2.0-preview"
+  },
+  "resolutions": {
+    "webcomponentsjs": "^v1.0.2"
+  }
+}
