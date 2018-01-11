@@ -20,8 +20,6 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
 
-    <script src=""></script>
-    <link rel="import" href=""/>
     <title>Predix Sample Application</title>
 
     <!-- Load webcomponentsjs polyfill + Polymer -->
@@ -49,9 +47,14 @@
         }
       </style>
     </custom-style>
+    <!-- Load basic styles -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/px-styles.css"/>
     <style>
       html, body, #root {
         height: 100%;
+      }
+      html {
+        overflow: hidden;
       }
     </style>
   </head>

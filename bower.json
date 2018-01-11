@@ -17,5 +17,20 @@
   },
   "resolutions": {
     "webcomponentsjs": "^v1.0.2"
+  },
+  "devDependencies": {
+    "px-colors-design": "^1.0.6",
+    "px-defaults-design": "^2.0.3",
+    "px-normalize-design": "^1.0.3",
+    "px-box-sizing-design": "^1.0.3",
+    "px-helpers-design": "^1.0.8",
+    "px-flexbox-design": "^1.0.3",
+    "px-headings-design": "^1.0.4",
+    "px-forms-design": "^2.0.7",
+    "px-shadows-design": "^1.0.3",
+    "px-buttons-design": "^2.0.6",
+    "px-actionable-design": "^2.0.5",
+    "px-spacing-design": "^1.0.3",
+    "px-widths-responsive-design": "^1.0.3"
   }
 }

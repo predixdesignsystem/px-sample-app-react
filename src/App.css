@@ -16,5 +16,5 @@
   height: calc(100% - 90px);
   position: relative;
   top: 90px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }

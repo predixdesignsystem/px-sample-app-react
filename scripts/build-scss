@@ -1,0 +1,39 @@
+#!/usr/bin/env node
+
+const path = require('path');
+const fs = require('fs');
+const sass = require('node-sass');
+const importOnce = require('node-sass-import-once');
+const postcss = require('postcss');
+const autoprefixer = require('autoprefixer');
+const cssnano = require('cssnano');
+
+const inFilePath = path.resolve(__dirname, '../sass/px-styles.scss');
+const outFilePath = path.resolve(__dirname, '../public/css/px-styles.css');
+
+const sassOptions = {
+  file: inFilePath,
+  importer: importOnce,
+  importOnce: {
+    index: true,
+    bower: true
+  }
+};
+
+const cleanCSS = text => {
+  return postcss([autoprefixer, cssnano])
+    .process(text, { from: inFilePath })
+    .then(result => Promise.resolve(result.css));
+};
+
+sass.render(sassOptions, (err, result) => {
+  if (err) {
+    console.error(`Sass build failed: ${err}`);
+    return;
+  }
+  const compiledCSS = result.css.toString();
+  cleanCSS(compiledCSS).then(cleanedCSS => {
+    fs.writeFileSync(outFilePath, cleanedCSS);
+    console.log(`Sass successfully built.\nInput: ${inFilePath}\nOutput: ${outFilePath}`)
+  });
+});

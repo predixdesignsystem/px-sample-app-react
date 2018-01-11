@@ -9,7 +9,7 @@ export default function AlertsInboxItem(props) {
 
   return (
     <div className='alerts-inbox-items'>
-      <p className='heading--page u-p'>{props.item.title}</p>
+      <p className='heading--page u-pl u-mt'>{props.item.title}</p>
 
       <div className='flex flex--wrap flex--justify u-p'>
         <span className='u-1/3-desk-and-up u-pr++ u-mb-'>Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</span>
@@ -25,7 +25,7 @@ export default function AlertsInboxItem(props) {
 
       <div className='u-p'>
         <span className='heading--subsection'>Customer Information</span>
-        <div className='flex flex--row flex--wrap flex--justify'>
+        <div className='flex flex--row flex--wrap flex--justify u-mt'>
           <KeyValuePair className="u-mv" valueKey="Customer" value={props.item.customer} />
           <KeyValuePair className="u-mv" valueKey="Contract Type" value={props.item.serialNumber} />
           <KeyValuePair className="u-mv" valueKey="DLN Type" value={props.item.dlnType} />
@@ -46,27 +46,6 @@ export default function AlertsInboxItem(props) {
         </div>
         <VisPolar width='500' height='500' chartData={props.polarChartData} seriesConfig={props.polarChartSeriesConfig} hideRegister useDegrees />
       </px-card>
-
     </div>
   );
 }
-
-
-
-
-//
-
-//
-// <px-card class="light-card" header-text="Evidence 2" icon="px-fea:analytics">
-//   <div class='actions'>
-//     <px-icon icon='px-utl:app-settings'></px-icon>
-//   </div>
-//   <px-vis-polar
-//     width="500"
-//     height="500"
-//     chart-data="[[chartData2]]"
-//     series-config="[[seriesConfig]]"
-//     hide-register
-//     use-degrees>
-//   </px-vis-polar>
-// </px-card>
