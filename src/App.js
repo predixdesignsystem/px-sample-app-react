@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { HashRouter, withRouter, Route } from 'react-router-dom';
 
-import BrandingBar from './components/BrandingBar';
-import AppNav from './components/AppNav';
+import BrandingBar from './web-components/BrandingBar';
+import AppNav from './web-components/AppNav';
+import AlertsView from './views/AlertsView';
+import DashboardView from './views/DashboardView';
 
-import AlertsView from './AlertsView';
-
-import { navItems } from './AppData';
+import { navItems } from './SampleData';
 import './App.css';
 
 class AppBase extends Component {
@@ -56,6 +56,7 @@ class AppBase extends Component {
               onSelectedRouteChanged={route => this.syncRouteToURL(route)} />
           </div>
           <div className="app-content">
+            <Route path="/dashboard" component={DashboardView}/>
             <Route path="/alerts" component={AlertsView}/>
           </div>
         </div>

@@ -32,11 +32,28 @@
     <link rel="import" href="%PUBLIC_URL%/bower_components/px-app-nav/px-app-nav.html"/>
     <link rel="import" href="%PUBLIC_URL%/bower_components/px-app-helpers/px-app-route/px-app-route.html"/>
     <link rel="import" href="%PUBLIC_URL%/bower_components/px-inbox/px-inbox.html"/>
+    <link rel="import" href="%PUBLIC_URL%/bower_components/px-key-value-pair/px-key-value-pair.html"/>
+    <link rel="import" href="%PUBLIC_URL%/bower_components/px-card/px-card.html"/>
+    <link rel="import" href="%PUBLIC_URL%/bower_components/px-icon-set/px-icon-set.html"/>
+    <link rel="import" href="%PUBLIC_URL%/bower_components/px-vis-radar/px-vis-radar.html"/>
+    <link rel="import" href="%PUBLIC_URL%/bower_components/px-vis-polar/px-vis-polar.html"/>
     <!-- Load theme -->
     <link rel="import" href="%PUBLIC_URL%/bower_components/px-theme/px-theme-styles.html"/>
     <custom-style>
-      <style include="px-theme-styles"></style>
+      <style include="px-theme-styles">
+        /* Customize component styles for this app */
+        html {
+        }
+        px-card[light-card] {
+          --px-card-background-color: white;
+        }
+      </style>
     </custom-style>
+    <style>
+      html, body, #root {
+        height: 100%;
+      }
+    </style>
   </head>
   <body>
     <noscript>

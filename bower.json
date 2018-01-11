@@ -8,7 +8,12 @@
     "px-branding-bar": "^1.1.0",
     "px-app-nav": "^2.1.1",
     "px-app-helpers": "^2.0.1",
-    "px-inbox": "polymer2.0-preview"
+    "px-inbox": "polymer2.0-preview",
+    "px-key-value-pair": "^1.2.2",
+    "px-card": "^2.0.2",
+    "px-vis-radar": "^3.5.0",
+    "px-icon-set": "^2.1.2",
+    "px-vis-polar": "^3.5.0"
   },
   "resolutions": {
     "webcomponentsjs": "^v1.0.2"
