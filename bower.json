@@ -1,5 +1,5 @@
 {
-  "name": "react-polymer-todo",
+  "name": "px-sample-app-react",
   "private": true,
   "dependencies": {
     "polymer": "^2.0.0",

@@ -1,19 +1,19 @@
 {
-  "name": "react-polymer-todo",
-  "version": "0.1.0",
+  "name": "px-sample-app-react",
+  "version": "0.0.1-alpha.1",
   "private": true,
-  "dependencies": {
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "1.0.17"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && npm run-script scss",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "scss": "./scripts/build-scss"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.17"
   },
   "devDependencies": {
     "autoprefixer": "^7.2.4",
