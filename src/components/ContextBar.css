@@ -1,0 +1,8 @@
+.context-bar {
+  position: relative;
+  display: flex;
+  height: 2.4rem;
+  z-index: 1;
+  background-color: var(--px-card-background-color);
+  align-items: center;
+}

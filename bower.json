@@ -13,7 +13,11 @@
     "px-card": "^2.0.2",
     "px-vis-radar": "^3.5.0",
     "px-icon-set": "^2.1.2",
-    "px-vis-polar": "^3.5.0"
+    "px-vis-polar": "^3.5.0",
+    "px-breadcrumbs": "^1.1.2",
+    "px-context-browser": "^2.1.3",
+    "px-simple-bar-chart": "^2.1.0",
+    "px-gauge": "^2.2.0"
   },
   "resolutions": {
     "webcomponentsjs": "^v1.0.2"

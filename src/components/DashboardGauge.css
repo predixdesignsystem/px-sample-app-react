@@ -1,0 +1,8 @@
+.dashboard-gauge-container {
+  width: 20%;
+  min-width: 16rem;
+}
+
+.dashboard-gauge-container px-gauge {
+  width: 100%;
+}

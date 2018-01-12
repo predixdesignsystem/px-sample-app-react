@@ -13,6 +13,7 @@ class KeyValuePair extends Component {
     el.key = props.valueKey;
     el.value = props.value;
     el.size = props.size;
+    el.uom = props.uom;
   }
 
   render() {
