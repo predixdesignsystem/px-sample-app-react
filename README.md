@@ -29,9 +29,9 @@ $ bower install
 
 ### Running the app locally
 
-The app uses Create React App's `react-scripts` module to serve locally for development. Run `$ npm run serve` to serve the app. Automatic file rebuilding and hot module reloading is enabled by default.
+The app uses Create React App's `react-scripts` module to serve locally for development. Run `$ npm start` to serve the app. Automatic file rebuilding and hot module reloading is enabled by default.
 
-Additionally the Predix Design System CSS modules are built and loaded using a separately task. The modules are installed with bower and built from SCSS into CSS, and the resulting built code is checked in to the repo at `public/css/px-styles.css`. The source SCSS is at `sass/px-styles.scss`. If you make changes to the source SCSS, run `$ npm run sass` to rebuild the CSS. You should not add custom CSS classes to style your React application from inside this SCSS file — it is loaded on the page in `index.html` to provide utility classes that can be used inside any React component.
+Additionally the Predix Design System CSS modules are built and loaded using a separately task. The modules are installed with bower and built from SCSS into CSS, and the resulting built code is checked in to the repo at `public/css/px-styles.css`. The source SCSS is at `sass/px-styles.scss`. If you make changes to the source SCSS, run `$ npm run scss` to rebuild the CSS. You should not add custom CSS classes to style your React application from inside this SCSS file — it is loaded on the page in `index.html` to provide utility classes that can be used inside any React component.
 
 ## How to run on the Predix Cloud
 
