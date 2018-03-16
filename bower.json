@@ -36,5 +36,6 @@
     "px-actionable-design": "^2.0.5",
     "px-spacing-design": "^1.0.3",
     "px-widths-responsive-design": "^1.0.3"
-  }
+  },
+  "license": "BSD-3-Clause"
 }
